@@ -24,3 +24,14 @@ git checkout main // 기본 브랜치가 main인 경우
 git checkout -b 브랜치이름
 ex) git checkout -b apply-feedback
 ```
+
+---
+
+### 단위 테스트
+
+- JUnit
+
+새로 학습한 지식
+- AssertJ Exception Assertions
+- [JUnit5 Parameterized Tests](https://www.baeldung.com/parameterized-tests-junit-5): `execute a single test method multiple times with different parameters.`
+- @ValueSource: `is an ArgumentsSource which provides access to an array of literal values.`
