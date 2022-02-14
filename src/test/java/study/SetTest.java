@@ -56,9 +56,18 @@ public class SetTest {
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"1,2,3:True" , "4,5:False"}, delimiter = ':')
-    void hasNum(int[] input, boolean output) {
-        assertEquals(numbers.contains(input), output);
+    @CsvSource(value = {"1,2,3:1,2,3" , "4,5,6:1,2,3"}, delimiter = ':')
+    void hasNum(String input, String output) {
+        int[] intArr = new int[3];
+        for (int i = 0; i < 3; i++) {
+            intArr[i] = input.charAt(i) - '0';
+        }
+
+        int[] intArr2 = new int[3];
+        for (int i = 0; i < 3; i++) {
+            intArr2[i] = output.charAt(i) - '0';
+        }
+        assertThat(numbers.contains(intArr)).isEqualTo(intArr2);
     }
 
 }
