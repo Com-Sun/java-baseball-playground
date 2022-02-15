@@ -35,3 +35,4 @@ ex) git checkout -b apply-feedback
 - AssertJ Exception Assertions
 - [JUnit5 Parameterized Tests](https://www.baeldung.com/parameterized-tests-junit-5): `execute a single test method multiple times with different parameters.`
 - @ValueSource: `is an ArgumentsSource which provides access to an array of literal values.`
+- 문자열 비교는 ==가 아닌 equals. ==는 주소값이 동일한지 확인. String은 int와 같은 Call by value가 아님. 
